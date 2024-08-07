@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/SamuelWang/js-funs/issues"
   },
-  "homepage": "https://github.com/SamuelWang/js-funs#readme"
+  "homepage": "https://github.com/SamuelWang/js-funs#readme",
+  "devDependencies": {
+    "rollup": "^4.20.0"
+  }
 }
