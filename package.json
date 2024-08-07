@@ -23,6 +23,7 @@
   "homepage": "https://github.com/SamuelWang/js-funs#readme",
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.6",
+    "rollup": "^4.20.0",
     "typescript": "^5.5.4"
   },
   "engines": {
