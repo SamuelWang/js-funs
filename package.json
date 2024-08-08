@@ -4,7 +4,8 @@
   "description": "A JavaScript library included utility functions.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -23,11 +24,17 @@
   "homepage": "https://github.com/SamuelWang/js-funs#readme",
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.6",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.8",
+    "prettier": "3.3.3",
     "rollup": "^4.20.0",
     "typescript": "^5.5.4"
   },
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=8.0.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
