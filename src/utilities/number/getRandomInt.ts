@@ -8,5 +8,5 @@ export function getRandomInt(
   min: number = 0,
   max: number = Number.MAX_VALUE
 ): number {
-  return Math.floor(Math.random() * max) + Math.floor(min);
+  return Math.floor(Math.random() * (max - min)) + Math.ceil(min);
 }
