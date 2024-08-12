@@ -1,12 +1,15 @@
 /**
  * A function for getting a random integer.
- * @param min The generated integer will be greater than or equal to this minimum number.
- * @param max The generated integer will be less than this maximum number.
+ * @param min The minimum integer (inclusive).
+ * @param max The maximum integer (exclusive).
  * @returns The generated integer.
  */
 export function getRandomInt(
   min: number = 0,
   max: number = Number.MAX_VALUE
 ): number {
-  return Math.floor(Math.random() * (max - min)) + Math.ceil(min);
+  min = Math.ceil(min);
+  max = Math.floor(max);
+
+  return Math.floor(Math.random() * (max - min)) + min;
 }
