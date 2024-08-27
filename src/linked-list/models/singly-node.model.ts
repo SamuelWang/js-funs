@@ -1,8 +1,8 @@
 /**
- * A node of the linked list.
+ * A singly node of the linked list.
  * @typeParam T - Type of the data.
  */
-export class Node<T> {
+export class SinglyNode<T> {
   /**
    * The data of a node.
    */
@@ -11,7 +11,7 @@ export class Node<T> {
   /**
    * The reference of the next node.
    */
-  public next: Node<T> | null;
+  public next: SinglyNode<T> | null;
 
   constructor(data: T) {
     this.data = data;
